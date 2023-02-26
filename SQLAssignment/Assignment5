@@ -1,0 +1,8 @@
+Write an SQL query to print details of workers excluding first names, “Vipul” and “Satish” from Worker table.
+SELECT * FROM WORKER WHERE FIRST_NAME NOT IN ('VIPUL','STATISH')
+
+Write an SQL query to print details of the Workers whose FIRST_NAME ends with ‘h’ and contains six alphabets.
+Select * from Worker where FIRST_NAME like '_____h';
+
+Write a query to validate Email of Employee.
+SELECT email, email LIKE '%_@_%.__%' AS isVaild FROM Employee;

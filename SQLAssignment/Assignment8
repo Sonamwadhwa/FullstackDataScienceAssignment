@@ -1,0 +1,7 @@
+Write an SQL query to fetch intersecting records of two tables.
+select column1, column2 from table1
+INTERSECT 
+select column1, column2 from table2 
+
+Write an SQL query to show records from one table that another table does not have.
+select t1.name from table t1 LEFT JOIN table t2 ON t2.name = t1.name where t2.name IS NULL

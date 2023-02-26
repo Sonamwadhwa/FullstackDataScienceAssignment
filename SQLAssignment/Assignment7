@@ -1,0 +1,6 @@
+Write an SQL query to show only odd rows from a table
+select * from tablename where (rowid,1)IN (select rowid,mod(rownum,2) 
+from emp_1);
+
+Write an SQL query to clone a new table from another table.
+create table employees_dummy select * from employees.
